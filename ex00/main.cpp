@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:19:36 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:42:03 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/20 18:04:14 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,28 @@
 #include "Dog.hpp"
 #include "Cat.hpp"
 
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
+
 int main()
 {
     const Animal* meta = new Animal();
-    const Animal* j = new Dog();
-    const Animal* i = new Cat();
+    const Animal* dog = new Dog();
+    const Animal* cat = new Cat();
+    const WrongAnimal* wrong = new WrongCat();
 
-    std::cout << "Dog type is : [" << j->getType() << "]" << std::endl;
-    std::cout << "Cat type is : [" << i->getType() << "]" << std::endl;
+    std::cout << "Dog type is : [" << dog->getType() << "]" << std::endl;
+    std::cout << "Cat type is : [" << cat->getType() << "]" << std::endl;
 
-    i->makeSound(); //will output the cat sound!
-    j->makeSound();
+    cat->makeSound(); //will output the cat sound!
+    dog->makeSound();
     meta->makeSound();
+    wrong->makeSound();
 
     delete meta;
-    delete j;
-    delete i;
+    delete dog;
+    delete cat;
+    delete wrong;
 
     std::cout << std::endl << std::endl;
 
