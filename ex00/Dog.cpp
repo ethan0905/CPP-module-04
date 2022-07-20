@@ -1,31 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Animal.hpp                                         :+:      :+:    :+:   */
+/*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/20 14:52:42 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 14:55:11 by esafar           ###   ########.fr       */
+/*   Created: 2022/07/20 15:01:10 by esafar            #+#    #+#             */
+/*   Updated: 2022/07/20 15:01:11 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-# define ANIMAL_HPP
+#include "Dog.hpp"
 
-#include <iostream>
-
-class Animal {
+Dog::Dog( void ) {
     
-    public:
-        Animal( void );
-        ~Animal( void );
-        
-    protected:
-        std::string type;
-        
-    private:
+    std::cout << "Default constructor called" << std::endl;
 
-};
+    return ;
+}
 
-#endif
+Dog::~Dog( void ) {
+
+    std::cout << "Destructor called" << std::endl;
+
+    return ;
+}

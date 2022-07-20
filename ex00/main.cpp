@@ -6,12 +6,11 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:19:36 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 14:54:10 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/20 14:56:26 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include "ClapTrap.hpp"
+#include "Animal.hpp"
 
 int	main(void)
 {
