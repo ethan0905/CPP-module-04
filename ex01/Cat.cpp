@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:59:45 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:24:16 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/20 18:54:39 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 Cat::Cat( void ) {
     
+    this->_brain = new Brain();
     std::cout << YELLOW "Cat:: " GREEN "Default constructor called" END << std::endl;
 
     return ;
@@ -30,6 +31,7 @@ Cat::~Cat( void ) {
 
     std::cout << YELLOW "Cat:: " RED "Destructor called" END << std::endl;
 
+    delete this->_brain;
     return ;
 }
 
