@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 18:10:25 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 18:15:01 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 16:24:48 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Brain {
     
     public:
         Brain( void );
-        Brain( std::string type );
+        Brain( Brain const &rhs );
         virtual ~Brain( void );
 
         Brain  &operator=( Brain const &rhs );

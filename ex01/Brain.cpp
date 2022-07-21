@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 18:10:22 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 18:15:21 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 16:31:54 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,16 @@ Brain::Brain( void ) {
     return ;
 }
 
+Brain::Brain( Brain const &rhs ) {
+    
+    std::cout << GREY "Brain:: " GREEN "Copy constructor called" END << std::endl;
+
+    *this = rhs;
+    
+    return ;
+}
+
+
 Brain::~Brain( void ) {
 
     std::cout << GREY "Brain:: " RED "Destructor called" END << std::endl;
@@ -26,10 +36,11 @@ Brain::~Brain( void ) {
     return ;
 }
 
-// Brain   &Brain::operator=( Brain const &rhs ) {
+Brain   &Brain::operator=( Brain const &rhs ) {
 
-//     std::cout << GREY "Brain:: Copy assignement operator called" END << std::endl;
-//     this->_type_ = rhs.getType();
+    std::cout << GREY "Brain:: Copy assignement operator called" END << std::endl;
+    for (int i = 0; i < 100; i++)
+        this->_ideas[i] = rhs._ideas[i];
 
-//     return (*this);
-// }
+    return (*this);
+}

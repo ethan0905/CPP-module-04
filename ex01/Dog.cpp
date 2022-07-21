@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:01:10 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:24:35 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 17:12:10 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 Dog::Dog( void ) {
     
     std::cout << MAGENTA "Dog:: " GREEN "Default constructor called" END << std::endl;
-
+    this->_type_ = "dog_default";
+    
     return ;
 }
 
