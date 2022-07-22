@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:52:42 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:34:32 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 18:24:11 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ANIMAL_HPP
 
 #include <iostream>
+#include "Brain.hpp"
 
 #define RED "\033[1;31m"
 #define GREEN "\033[1;32m"
@@ -33,8 +34,9 @@ class Animal {
         Animal( std::string type );
         virtual ~Animal( void );
         
-        std::string const &getType( void ) const;
         virtual void    makeSound( void ) const;
+        std::string const &getType( void ) const;
+        virtual Brain   *getBrain( void ) const = 0;
 
         Animal  &operator=( Animal const &rhs );
         

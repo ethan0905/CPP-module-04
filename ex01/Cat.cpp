@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:59:45 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/21 17:12:27 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 18:36:20 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ Cat::Cat( void ) {
 
 Cat::Cat( std::string type ) : Animal( type ){
     
+    this->_brain = new Brain();
     std::cout << YELLOW "Cat:: " GREEN "Default constructor called" END << std::endl;
 
     return ;
@@ -46,7 +47,14 @@ void    Cat::makeSound( void ) const {
 Cat     &Cat::operator=( Cat const &rhs ) {
 
     std::cout << YELLOW "Cat:: Copy assignement operator called" END << std::endl;
-    this->Animal::operator=(rhs);
+    // this->Animal::operator=(rhs);
+    this->_type_ = rhs.getType();
+    *(this->_brain) = *(rhs.getBrain());
     
     return (*this);
+}
+
+Brain   *Cat::getBrain( void ) const {
+
+    return (this->_brain);
 }

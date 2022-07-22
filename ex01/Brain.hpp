@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 18:10:25 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/21 16:24:48 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 18:46:06 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,10 +28,13 @@ class Brain {
         Brain( Brain const &rhs );
         virtual ~Brain( void );
 
+        std::string const &getIdea( int i ) const;
+
         Brain  &operator=( Brain const &rhs );
         
-    private:
         std::string _ideas[100];
+    private:
+    
 };
 
 std::ostream    &operator<<( std::ostream &o, Brain const  &rhs);

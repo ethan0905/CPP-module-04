@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:52:35 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:32:37 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 18:36:36 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,17 @@ std::string const &Animal::getType( void ) const {
     return (this->_type_);
 }
 
-
 void    Animal::makeSound( void ) const {
     
     std::cout << CYAN "Hey, i am an animal." END << std::endl;
     return ;
 }
+
+// Brain   *Animal::getBrain( void ) const {
+
+//     return (this->_brain);
+// }
+
 
 Animal   &Animal::operator=( Animal const &rhs ) {
 

@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 15:00:54 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/21 15:40:47 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/21 18:07:12 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,12 @@ class Dog : public Animal {
         ~Dog( void );
         
         void    makeSound( void )const;
+        virtual Brain   *getBrain( void )const;
 
         Dog     &operator=( Dog const &rhs );
+
     private:
+        Brain*  _brain;
 
 };
 
