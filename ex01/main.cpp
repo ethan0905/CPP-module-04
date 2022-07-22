@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:19:36 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/22 13:46:08 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/22 13:47:43 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,6 @@ int main()
     std::cout << "DEEP COPY!!" << std::endl;
 	std::cout << "-----------------------------" << std::endl;
 
-	// std::cout << "-----------------------------" << std::endl;
-
 
     brain = animal[0]->getBrain();
 
@@ -47,6 +45,8 @@ int main()
 
     for (int z = 0; z < 4; z++)
         std::cout << animal[0]->getBrain()->_ideas[z] << std::endl;
+
+	std::cout << "-----------------------------" << std::endl;
 
 
     //free every animal of the tab
