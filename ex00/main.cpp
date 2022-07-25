@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:19:36 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 18:04:14 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:28:19 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int main()
     cat->makeSound(); //will output the cat sound!
     dog->makeSound();
     meta->makeSound();
-    wrong->makeSound();
+    wrong->makeSound(); //will output wrong-animal sound instead of actual wrongcat sound
 
     delete meta;
     delete dog;
@@ -50,6 +50,8 @@ int main()
     delete meta2;
     delete j2;
     delete i2;
+
+	// system("leaks Polymorphism");
 
     return (0);
 }

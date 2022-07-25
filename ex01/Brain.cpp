@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 18:10:22 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/21 18:45:49 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:39:52 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ Brain::Brain( Brain const &rhs ) {
     
     return ;
 }
-
 
 Brain::~Brain( void ) {
 

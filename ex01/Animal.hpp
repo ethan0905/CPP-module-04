@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:52:42 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/21 18:24:11 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:38:00 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ class Animal {
     public:
         Animal( void );
         Animal( std::string type );
+        Animal( Animal const & rhs );
         virtual ~Animal( void );
         
         virtual void    makeSound( void ) const;

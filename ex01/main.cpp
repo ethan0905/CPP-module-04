@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 17:19:36 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/22 13:47:43 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/22 17:04:07 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int main()
     for (int z = 0; z < 4; z++)
         std::cout << animal[0]->getBrain()->_ideas[z] << std::endl;
 
-	std::cout << "-----------------------------" << std::endl;
+	// std::cout << "-----------------------------" << std::endl;
 
 
     //free every animal of the tab
@@ -55,6 +55,6 @@ int main()
         delete animal[j];
         std::cout << "Animal ["<< j << "] has been destroyed." << std::endl;
     }
-
+    
     return (0);
 }

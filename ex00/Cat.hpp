@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:59:49 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 16:56:56 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:32:36 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class Cat : public Animal {
     public:
         Cat( void );
         Cat( std::string type );
+        Cat( Cat const & rhs );
         ~Cat( void );
         
         // std::string getType( void )const;

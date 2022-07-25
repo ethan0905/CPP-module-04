@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 17:58:55 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:59:55 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:36:28 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ class WrongCat : public WrongAnimal {
     public:
         WrongCat( void );
         WrongCat( std::string type );
+        WrongCat( WrongCat const & rhs );
         ~WrongCat( void );
         
         // std::string getType( void )const;

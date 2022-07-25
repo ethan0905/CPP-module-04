@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 17:52:31 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:55:01 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:35:31 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,11 @@ class WrongAnimal {
     public:
         WrongAnimal( void );
         WrongAnimal( std::string type );
+        WrongAnimal( WrongAnimal const & rhs );
         virtual ~WrongAnimal( void );
         
         std::string const &getType( void ) const;
-        virtual void    makeSound( void ) const;
+        void    makeSound( void ) const;
 
         WrongAnimal  &operator=( WrongAnimal const &rhs );
         

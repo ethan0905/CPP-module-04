@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:52:42 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:34:32 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:31:16 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ class Animal {
     public:
         Animal( void );
         Animal( std::string type );
+        Animal( Animal const & rhs );
         virtual ~Animal( void );
         
         std::string const &getType( void ) const;

@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 17:58:31 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 18:06:50 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:36:13 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ WrongCat::WrongCat( std::string type ) : WrongAnimal( type ){
     
     std::cout << YELLOW "WrongCat:: " GREEN "Default constructor called" END << std::endl;
 
+    return ;
+}
+
+WrongCat::WrongCat( WrongCat const & rhs ) {
+    
+    std::cout << YELLOW "WrongCat:: " GREEN "Copy constructor called" END << std::endl;
+    *this = rhs;
+    
     return ;
 }
 

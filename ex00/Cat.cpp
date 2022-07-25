@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:59:45 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:24:16 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:33:15 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ Cat::Cat( std::string type ) : Animal( type ){
     
     std::cout << YELLOW "Cat:: " GREEN "Default constructor called" END << std::endl;
 
+    return ;
+}
+
+Cat::Cat( Cat const & rhs ) {
+    
+    std::cout << YELLOW "Cat:: " GREEN "Copy constructor called" END << std::endl;
+    *this = rhs;
+    
     return ;
 }
 

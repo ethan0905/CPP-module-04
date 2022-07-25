@@ -6,7 +6,7 @@
 /*   By: esafar <esafar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/20 14:52:35 by esafar            #+#    #+#             */
-/*   Updated: 2022/07/20 17:32:37 by esafar           ###   ########.fr       */
+/*   Updated: 2022/07/25 19:32:14 by esafar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@ Animal::Animal( std::string type ) : _type_(type) {
     
     std::cout << CYAN "Animal:: " GREEN "Default constructor called" END << std::endl;
 
+    return ;
+}
+
+Animal::Animal( Animal const & rhs ) {
+    
+    std::cout << CYAN "Animal:: " GREEN "Copy constructor called" END << std::endl;
+    *this = rhs;
+    
     return ;
 }
 
